@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <!--woow AnimateFiles Css-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--bootstrap-file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--bootstrap-file-->
+    <!--fontawesome-file-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--woow AnimateFiles Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet" />
+    <title>Property Invest</title>
+  </head>
+  <body>
+    <section class="login-bg position-relative w-100">
+        <div class="overlay"></div>
+        <div class="login-section p-5">
+            <div class="row mt-4 align-items-center">
+                <div class="col-md-6">
+                    <img src="./img/house-2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h4 class="mb-5 mt-3 fw-bold">Login</h4>
+                        <input type="text" class="form-control mb-3" placeholder="Email or phone number">
+                        <div class="password-container mb-3">
+                            <input type="password" class="form-control" placeholder="password" id="password">
+                            <i class="fas fa-eye toggle-password" onclick="showPassword()" id="togglePassword"></i>
+                        </div>
+                        <p class="text-end mb-3">Forgotten Password?</p>
+                        <div class="btn text-black-50 fw-bold px-5" style="background-color:#F9E2D7 ;">Submit</div>
+                        <div class="mt-2 d-flex gap-1 flex-wrap justify-content-center">
+                            <p class="text-danger">Doesn’t have an account?</p>
+                            <p class="text-dark fw-bold"><a href="sign-up.html">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--scirpt Files-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/all.min.js"></script>
+    <script src="js/login.js"></script>
+    <!--scirpt Files-->
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Clinic</title>
+    <!--bootstrap-file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--bootstrap-file-->
+    <!--fontawesome-file-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--icons-site-->
+    <link rel="icon" type="png" href="img/logo.png" />
+    <!--icons-site-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--google-font-->
+    <!--woow AnimateFiles Css-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--woow AnimateFiles Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap" rel="stylesheet">
+    <!--google-font-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet" />
+      
+  </head>
+  <body class="text-black" style="background-color:#F3D1C0  ;">
+    <section class="pt-5 profile-first-section">
+      <div class="d-flex justify-content-center gap-3 align-items-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <div class="package-charge">
+            <div class="border mb-2 d-flex gap-3 p-2">
+              <p class="fw-bold pt-2">Current Package:</p>
+              <p class="m-0 pt-2 fw-bold">Premium Advance</p>
+            </div>
+            <div class="border d-flex gap-3 p-2">
+              <p class="fw-bold pt-2">Charge:</p>
+              <p class="m-0 pt-2 fw-bold">2000 L.E</p>
+            </div>
+          </div>
+          <h2 class="mt-4">Profile</h2>
+          <div class="upload position-relative mt-3 mb-3" id="uploads">
+              <img src="img/profile-person-1.png"id="img" class="img-fluid" alt="">
+              <label for="upload"><i class="fa-solid fa-camera"></i></label>
+              <input type="file" id="upload" onchange="showGreenSave()" >
+          </div>
+          <h3 id="profile-name">Jack Arsany</h3>
+          <h5 id="profile-dob">7-2-2001</h5>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+          <div class="p-4">
+            <div class="d-flex justify-content-between align-items-center w-100 border-bottom text-green mb-2">
+                <div class="d-flex align-items-start flex-column edit-main-div">
+                  <h4 class="fw-bold">Name</h4>
+                  <h5 class="text-black m-0 mb-2">Jack Arsany</h5>
+                  <input type="text" class="form-control bg-transparent border-0 d-none">
+                </div>
+                <i class="fa-solid fa-pencil mb-1" style="cursor: pointer;" onclick="editField(this)"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center w-100 border-bottom text-green mb-2">
+                <div class="d-flex align-items-start flex-column edit-main-div">
+                    <h4 class="fw-bold">Email</h4>
+                    <h5 class="text-black m-0 mb-2">ali@gmail.com</h5>
+                    <input type="text" class="form-control bg-transparent border-0 d-none">
+                </div>
+                <i class="fa-solid fa-pencil mb-1" style="cursor: pointer;" onclick="editField(this)"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center w-100 border-bottom text-green mb-2">
+                <div class="d-flex align-items-start flex-column edit-main-div">
+                    <h4 class="fw-bold">Password</h4>
+                    <h5 class="text-black m-0 mb-2">********</h5>
+                    <input type="text" class="form-control bg-transparent border-0 d-none">
+                </div>
+                <i class="fa-solid fa-pencil mb-1" style="cursor: pointer;" onclick="editField(this)"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center w-100 border-bottom text-green mb-2">
+                <div class="d-flex align-items-start flex-column edit-main-div">
+                    <h4 class="fw-bold">Phone  Number</h4>
+                    <h5 class="text-black m-0 mb-2">01022352587</h5>
+                    <input type="text" class="form-control bg-transparent border-0 d-none">
+                </div>
+                <i class="fa-solid fa-pencil mb-1" style="cursor: pointer;" onclick="editField(this)"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center w-100 border-bottom text-green mb-2">
+                <div class="d-flex align-items-start flex-column edit-main-div">
+                    <h4 class="fw-bold">Address</h4>
+                    <h5 class="text-black m-0 mb-2">Cairo, Nasr City</h5>
+                    <input type="text" class="form-control bg-transparent border-0 d-none">
+                </div>
+                <i class="fa-solid fa-pencil mb-1" style="cursor: pointer;" onclick="editField(this)"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center w-100 border-bottom text-green mb-2">
+                <div class="d-flex align-items-start flex-column edit-main-div">
+                    <h4 class="fw-bold">Date of birth</h4>
+                    <h5 class="text-black m-0 mb-2">7-2-2001</h5>
+                    <input type="text" class="form-control bg-transparent border-0 d-none">
+                </div>
+                <i class="fa-solid fa-pencil mb-1" style="cursor: pointer;" onclick="editField(this)"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center w-100 border-bottom text-green mb-2">
+                <div class="d-flex align-items-start flex-column edit-main-div">
+                    <h4 class="fw-bold">Company Name</h4>
+                    <h5 class="text-black m-0 mb-2">Property Invest</h5>
+                    <input type="text" class="form-control bg-transparent border-0 d-none">
+                </div>
+                <i class="fa-solid fa-pencil mb-1" style="cursor: pointer;" onclick="editField(this)"></i>
+            </div>
+            <h3 class="text-center fw-bold my-4">Advertisments</h3>
+            <div>هنا يتم وضع جدول الإعلانات</div>
+            <h3 class="text-center fw-bold my-4">Reviews</h3>
+            <div>هنا يتم وضع التقييمات</div>
+          </div>
+          <div class="d-flex justify-content-end mb-4">
+            <div class="btn btn-light button-hover text-secondary fw-bold first-save-btn px-5 py-2">Save changes</div>
+            <div class="btn text-light fw-bold second-save-btn d-none px-5 py-2" style="background-color: #3B3A5D"  onclick="saveChanges()">Save changes</div>
+          </div>
+      </div>
+    </section>
+
+    <!--scirpt Files-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+    <!--scirpt Files-->
+  </body>
+</html>

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Kufam;
+}
+.hover{
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.hover:hover{
+    opacity: 0.8;
+}
+header{
+    background-image: url(../img/news-background.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav ul li{
+    padding-left: 10px;
+}
+header nav ul li a.nav-link{
+    color:#A4A4A4;
+    font-weight: bold;
+}
+header nav ul li.active a{
+    color:#0A0B3B;
+}
+
+.header-text{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+

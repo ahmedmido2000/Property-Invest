@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--woow AnimateFiles Css-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--bootstrap-file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--bootstrap-file-->
+    <!--fontawesome-file-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--woow AnimateFiles Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet" />
+    <title>Property Invest</title>
+  </head>
+  <body class="position-relative text-capitalize">
+    <div class="overlay d-none"></div>
+    <div class="more-filters bg-white d-none">
+      <div class="border-bottom">
+          <div class="d-flex justify-content-between align-items-center w-100 py-3 px-4">
+            <h4 class="fw-bold" style="color:#3b3a5e ;">More Filters</h4>
+            <i class="fa-solid fa-close text-light p-2 bg-danger" onclick="closeMoreFilters()" style="font-size: 15px;cursor: pointer;border-radius: 5px;"></i>
+          </div>
+      </div>
+      <div class="p-4 border-bottom">
+        <h5 style="color:#3b3a5e ;"><i class="fa-solid fa-couch"></i> Furnishing</h5>
+        <div class="d-flex justify-content-start flex-wrap gap-2">
+          <div class="text-start mt-3"><div class="btn px-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">All Furnishings</div></div>
+          <div class="text-start mt-3"><div class="btn px-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">Furnished</div></div>
+          <div class="text-start mt-3"><div class="btn px-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">Unfurnished</div></div>
+          <div class="text-start mt-3"><div class="btn px-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">Partly Furnished</div></div>
+        </div>
+      </div>
+      <div class="p-4 border-bottom">
+        <h5 style="color:#3b3a5e ;"><i class="fa-solid fa-trowel-bricks"></i> Completion Status</h5>
+        <div class="d-flex justify-content-start flex-wrap gap-2">
+          <div class="text-start mt-3"><div class="btn px-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">Any</div></div>
+          <div class="text-start mt-3"><div class="btn px-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">Off-plan</div></div>
+          <div class="text-start mt-3"><div class="btn px-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">Ready</div></div>
+        </div>
+      </div>
+      <div class="p-4 border-bottom">
+        <h5 style="color:#3b3a5e ;"><i class="fa-solid fa-ruler"></i> Property Size (Sqft)</h5>
+        <div class="d-flex justify-content-start flex-wrap gap-3">
+          <div class="mt-3">
+            Min. Area:
+            <input
+            type="text"
+            class="form-control border-danger w-auto"
+            placeholder="Min. Area" />
+          </div>
+          <div class="mt-3">
+            Max. Area:
+            <input
+            type="text"
+            class="form-control border-danger w-auto"
+            placeholder="Max. Area" />
+          </div>
+        </div>
+      </div>
+      <div class="p-4 border-bottom">
+        <h5 style="color:#3b3a5e ;"><i class="fa-regular fa-gem"></i> Amenities</h5>
+        <div class="row mt-3">
+          <div class="col-sm-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Central">
+              <label class="form-check-label" for="Central">
+                Central A/C
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Shared-Pool">
+              <label class="form-check-label" for="Shared-Pool">
+                Shared Pool
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Concierge">
+              <label class="form-check-label" for="Concierge">
+                Concierge Service
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Maids-Room">
+              <label class="form-check-label" for="Maids-Room">
+                Maids Room
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Shared-Spa">
+              <label class="form-check-label" for="Shared-Spa">
+                Shared Spa
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Covered-Parking">
+              <label class="form-check-label" for="Covered-Parking">
+                Covered Parking
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Balcony">
+              <label class="form-check-label" for="Balcony">
+                Balcony
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Shared-Gym">
+              <label class="form-check-label" for="Shared-Gym">
+                Shared Gym
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="View-of-Water">
+              <label class="form-check-label" for="View-of-Water">
+                View of Water
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="btn btn-light text-primary show-more-btn mt-3" onclick="showMoreFunction()">Show more <i class="fa-solid fa-chevron-down"></i></div>
+        <div class="row checkbox-hidden d-none">
+          <div class="col-sm-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="View-of-Landmark">
+              <label class="form-check-label" for="View-of-Landmark">
+                View of Landmark
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Private-Garden">
+              <label class="form-check-label" for="Private-Garden">
+                Private Garden
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Private-Jacuzzi">
+              <label class="form-check-label" for="Private-Jacuzzi">
+                Private Jacuzzi
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Built-in-Kitchen-Appliances">
+              <label class="form-check-label" for="Built-in-Kitchen-Appliances">
+                Built in Kitchen Appliances
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Children's-Pool">
+              <label class="form-check-label" for="Children's-Pool">
+                Children's Pool
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Pets-Allowed">
+              <label class="form-check-label" for="Pets-Allowed">
+                Pets Allowed
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Private-Pool">
+              <label class="form-check-label" for="Private-Pool">
+                Private Pool
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Built-in-Wardrobes">
+              <label class="form-check-label" for="Built-in-Wardrobes">
+                Built in Wardrobes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Maid-Service">
+              <label class="form-check-label" for="Maid-Service">
+                Maid Service
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Barbecue-Area">
+              <label class="form-check-label" for="Barbecue-Area">
+                Barbecue Area
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Study">
+              <label class="form-check-label" for="Study">
+                Study
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Private-Gym">
+              <label class="form-check-label" for="Private-Gym">
+                Private Gym
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Walk-in-Closet">
+              <label class="form-check-label" for="Walk-in-Closet">
+                Walk-in Closet
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="Children's-Play-Area">
+              <label class="form-check-label" for="Children's-Play-Area">
+                Children's Play Area
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="btn btn-light text-primary show-less-btn d-none mt-3" onclick="showLessFunction()">Show Less <i class="fa-solid fa-chevron-up"></i></div>
+      </div>
+      <div class="p-4 border-bottom">
+        <h5 style="color:#3b3a5e ;"><i class="fa-regular fa-circle-play"></i> Virtual Viewings</h5>
+        <div class="d-flex justify-content-start flex-wrap gap-2">
+          <div class="text-start mt-3"><div class="btn px-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">All Virtual Viewings</div></div>
+          <div class="text-start mt-3"><div class="btn px-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">360 Tours</div></div>
+          <div class="text-start mt-3"><div class="btn px-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">Vedio Tours</div></div>
+          <div class="text-start mt-3"><div class="btn px-3 hover border-primary" style="color: #3b3a5e;background-color: #FFBB50;">Live Viewings</div></div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end gap-3 px-4 py-2">
+          <div class="btn btn-outline-primary">Clear All</div>
+          <div class="btn btn-danger">Show 12,911 results</div>
+      </div>
+    </div>
+    <header>
+      <div class="d-flex justify-content-between px-4 py-2">
+        <div class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-secondary fw-bold bg-white"
+            id="languagesDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            href="#"
+            ><span><i class="fa-solid fa-globe"></i></span> Languages</a
+          >
+          <ul class="dropdown-menu" aria-labelledby="languagesDropdown">
+            <li>
+              <a
+                class="dropdown-item text-secondary fw-bold"
+                href="#">
+                Arabic</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-secondary fw-bold"
+                href="#"
+                >English</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="btn fw-bold hover text-white" style="background-color: #3b3a5e">
+          Login/Signup
+        </div>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-white bg-white px-3 py-3">
+          <a class="navbar-brand fw-bold" style="color: #3b3a5e" href="#"
+            ><img src="./img/Icon.svg" style="width:60px ;height:40px" alt=""> Propertyinvest</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <span style="color: #3b3a5e"
+                ><i class="fa-solid fa-bars p-1"></i
+              ></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle fw-bold"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#">
+                  Services</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-bold"
+                      href="post-advertise.html">
+                      Post Advertise</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-bold"
+                      href="membership.html"
+                      >Membership</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >New Launches<i
+                    class="fa-solid fa-star ms-1"
+                    style="color: #712600"></i
+                ></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle fw-bold"
+                  id="propertiesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#">
+                  Properties</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="propertiesDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-bold"
+                      href="#">
+                      Buy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-bold"
+                      href="#"
+                      >Rent</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle fw-bold"
+                  id="countryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#">
+                  Country</a
+                >
+                <ul class="dropdown-menu text-center" aria-labelledby="countryDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-bold"
+                      href="#">
+                      <img src="./img/egypt.png" style="width:20px ;" class="img-fluid" alt=""> Egypt</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-bold"
+                      href="#"
+                      > <img src="./img/emirates.png" style="width:20px ;" class="img-fluid" alt=""> Emirates</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-bold"
+                      href="#"
+                      > <img src="./img/saudi.png" style="width:20px ;" class="img-fluid" alt=""> Saudi Arabia</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <div
+                class="btn hover fw-bold text-white"
+                style="background-color: #3b3a5e">
+                Contact
+              </div>
+            </form>
+          </div>
+        </nav>
+        <div class="row align-items-center ">
+            <div class="col-md-6 p-4 h-100">
+                <span class="w-auto p-2" style="color:#B16642 ; background-color: #F3D1C1;letter-spacing: 1.5px; "><i class="fa-solid fa-house"></i> Real Estate Agency</span>
+                <h2 class="fw-bold py-2" style="color: #3b3a5e;">Find the perfect place to Live with your family</h2>
+                <p style="color:#B16642 ;">Distinctively re-engineer revolutionary meta-services and premium architectures. Intrinsically incubate.</p>
+                <div class="btn hover bg-white px-3 py-2" style="color: #3b3a5e;font-size: 18px;">Try 3D <span><i class="fa-solid fa-arrow-right text-light"  style="background-color: #FFBB50;border-radius: 50%;width: 10px;height:10px"></i></span></div>
+                <!-- <img src="./img/3d.jpeg" style="width:100px ;height:100px" alt=""> -->
+              </div>
+            <div class="col-md-6 h-100 p-4">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" >
+                        <div class="carousel-item active">
+                            <img src="./img/house.jpg" style="height: 400px;" alt="" class="w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/house-2.png" style="height: 400px;" alt="" class="w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/house-3.webp" style="height: 400px;" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </header>
+    <section class="bg-white  pb-5 pt-5">
+        <div class="container">
+            <div class="new-lanches-container">
+                <div class="content-wrapper">
+                    <div class="content p-5 mb-2" style="background-color:#F2F2F2;">
+                        <span class="new-lanches-span p-2"><span style="color:#FFBB50;">01</span> New Launches</span>
+                        <h3 class="fw-bold py-3" style="color:#3b3a5e">Don’t Miss this an opportunity In An Easy Way</h3>
+                        <p style="color:#B16642;">Distinctively re-engineer revolutionary meta-services and premium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                        <div class="row">
+                            <div class="col-md-4 d-flex">
+                                <div class="bullet-parent me-2">
+                                    <div class="bullet-child"></div>
+                                </div>
+                                <p style="color:#757575;">Only pay when you publish</p>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="bullet-parent me-2">
+                                    <div class="bullet-child"></div>
+                                </div>
+                                <p style="color:#757575;">Unlimited featured use</p>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="bullet-parent me-2">
+                                    <div class="bullet-child"></div>
+                                </div>
+                                <p style="color:#757575;">24/7 supports</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content p-5 mb-2" style="background-color:#F2F2F2; display: none;">
+                        <span class="new-lanches-span p-2"><span style="color:#FFBB50;">02</span> Another Lanche</span>
+                        <h3 class="fw-bold py-3" style="color:#3b3a5e">Another opportunity In An Easy Way</h3>
+                        <p style="color:#B16642;">Different content here for another lanche. More information and details are available.</p>
+                        <div class="row">
+                            <div class="col-md-4 d-flex">
+                                <div class="bullet-parent me-2">
+                                    <div class="bullet-child"></div>
+                                </div>
+                                <p style="color:#757575;">Different feature 1</p>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="bullet-parent me-2">
+                                    <div class="bullet-child"></div>
+                                </div>
+                                <p style="color:#757575;">Different feature 2</p>
+                            </div>
+                            <div class="col-md-4 d-flex">
+                                <div class="bullet-parent me-2">
+                                    <div class="bullet-child"></div>
+                                </div>
+                                <p style="color:#757575;">Different feature 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="prev" class="control-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="next" class="control-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="image-wrapper mx-auto row mt-2">
+                    <div class="col-md-4 mb-2">
+                        <img src="./img/house.jpg" style="height:250px;" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <img src="./img/house-2.png" style="height:250px;" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <img src="./img/house-3.webp" style="height:250px;" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+                <div class="image-wrapper mx-auto row mt-2" style="display: none;">
+                    <div class="col-md-4 mb-2">
+                        <img src="./img/house-3.webp" style="height:250px;" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <img src="./img/house.jpg" style="height:250px;" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <img src="./img/house-2.png" style="height:250px;" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5 " style="background-color: #F5F1EF;">
+        <div class="pt-5">
+            <div class="row container-fluid">
+                <div class="mb-2 col-md-3 col-sm-4 col-6 col-lg-3">
+                  <div class="form-group   position-relative">
+                    <input
+                      type="text"
+                      class="form-control border-danger ps-5"
+                      
+                      placeholder="city, community or building" />
+                    <i
+                      class="fa-solid fa-search text-secondary position-absolute"
+                      style="top: 50%; transform: translateY(-50%); left: 10px"></i>
+                  </div>
+                </div>
+                <div class="mb-2 col-md-3 col-sm-4 col-6 col-lg-2">
+                  <div class="form-group  ">
+                    <select class="form-select border-danger" style="color: #3b3a5e;" aria-label="Default select example">
+                        <option value="0" selected >Rent</option>
+                        <option value="1">Buy</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="mb-2 col-md-3 col-sm-4 col-6 col-lg-3">
+                  <div class="form-group  ">
+                    <select class="form-select border-danger" style="color: #3b3a5e;" aria-label="Default select example">
+                        <option value="0" selected >Property Type</option>
+                        <option value="1">Apartment</option>
+                        <option value="2">Villa</option>
+                        <option value="3">Townhouse</option>
+                        <option value="3">Penthouse</option>
+                        <option value="3">Compound</option>
+                        <option value="3">Duplex</option>
+                        <option value="3">Full Floor</option>
+                        <option value="3">Half Floor</option>
+                        <option value="3">Whole Building</option>
+                        <option value="3">Land</option>
+                        <option value="3">Bulk Sale Unit</option>
+                        <option value="3">Bungalow</option>
+                        <option value="3">Hotel & Hotel Apartment</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="mb-2 col-md-3 col-sm-4 col-6 col-lg-2">
+                  <div class="form-group  ">
+                    <select class="form-select border-danger" style="color: #3b3a5e;" aria-label="Default select example">
+                        <option value="0" selected disabled>Beds:</option>
+                        <option value="1">Studio</option>
+                        <option value="2">0</option>
+                        <option value="3">1</option>
+                        <option value="3">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                        <option value="3">6</option>
+                        <option value="3">7</option>
+                        <option value="3">+7</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="mb-2 col-md-3 col-sm-4 col-6 col-lg-2">
+                  <div class="form-group  ">
+                    <select class="form-select border-danger" style="color: #3b3a5e;" aria-label="Default select example">
+                        <option value="0" selected disabled>Baths:</option>
+                        <option value="2">0</option>
+                        <option value="3">1</option>
+                        <option value="3">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                        <option value="3">6</option>
+                        <option value="3">7</option>
+                        <option value="3">+7</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="mb-2 col-md-3 col-sm-4 col-6 col-lg-2">
+                  <div class=" form-group  dropdown">
+                    <a
+                      class="nav-link form-control border-danger dropdown-toggle"
+                      id="languagesDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      href="#"
+                      style="padding-top:6px ;padding-bottom:6px;color: #3b3a5e;"
+                      > Price</a
+                    >
+                    <ul class="dropdown-menu" aria-labelledby="languagesDropdown">
+                      <li class="m-3">
+                        Min:
+                        <input
+                        type="text"
+                        class="form-control border-danger w-auto"
+                        placeholder="Min. Price (LE)" />
+                      </li>
+                      <li class="m-3">
+                        Max:
+                        <input
+                        type="text"
+                        class="form-control border-danger w-auto"
+                        placeholder="Max. Price (LE)" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                    <div class="mb-2 col-md-3 col-sm-4 col-6 col-lg-2"><div class="btn border-danger bg-white " onclick="moreFilters()" style="color: #3b3a5e;">More Filters</div></div>
+                    <div class="mb-2 col-md-3 col-sm-4 col-6 col-lg-1"><div class="btn hover border-danger fw-bold" style="color: #3b3a5e;background-color: #F3D1C0;">Find</div></div>
+            </div>
+        </div>
+        <div class="pt-5 text-center">
+            <span class="new-lanches-span p-2"><span style="color:#FFBB50;">02</span> Featured properties</span>
+            <h3 class="fw-bold py-3" style="color:#3b3a5e">Properties for sale in your <br> favorite area</h3>
+        </div>
+        <div class="container-fluid">
+            <div class="mt-3 row ">
+                <div class="col-lg-4 col-md-6">
+                    <div class=" bg-white mb-3 p-4">
+                        <img src="./img/house.jpg" style="height: 200px;" class="img-fluid w-100" alt="">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h3 class="fw-bold" style="color:#FFBB50 ;">$3500/Mo</h3>
+                            <div class="btn hover p-2 px-3 fw-bold" style="background-color:#FFBB50 ;color: #3b3a5e;">Contact</div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div>
+                            <h5 class="fw-bold mt-3" style="color:#3b3a5e">Comefortable Appartment</h5>
+                            <p style="color:#8E8E8E ;"><i class="fa-solid fa-location-dot" style="color: #FFBB50;"></i> 709 West Drive Chicago, IL 60606</p>
+                          </div>
+                          <div class="btn btn-danger fw-bold p-2" style="font-size: 18px;">3D View</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bed border-end pe-1"></i> 3 Beds</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bath"></i> 2 Baths</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-car"></i> 1 Parking</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-ruler"></i> 120 Sqft</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class=" bg-white mb-3 p-4">
+                        <img src="./img/house.jpg" style="height: 200px;" class="img-fluid w-100" alt="">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h3 class="fw-bold" style="color:#FFBB50 ;">$3500/Mo</h3>
+                            <div class="btn hover p-2 px-3 fw-bold" style="background-color:#FFBB50 ;color: #3b3a5e;">Contact</div>
+                        </div>
+                        <h5 class="fw-bold mt-3" style="color:#3b3a5e">Comefortable Appartment</h5>
+                        <p style="color:#8E8E8E ;"><i class="fa-solid fa-location-dot" style="color: #FFBB50;"></i> 709 West Drive Chicago, IL 60606</p>
+                        <div class="row">
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bed border-end pe-1"></i> 3 Beds</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bath"></i> 2 Baths</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-car"></i> 1 Parking</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-ruler"></i> 120 Sqft</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class=" bg-white mb-3 p-4">
+                        <img src="./img/house.jpg" style="height: 200px;" class="img-fluid w-100" alt="">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h3 class="fw-bold" style="color:#FFBB50 ;">$3500/Mo</h3>
+                            <div class="btn hover p-2 px-3 fw-bold" style="background-color:#FFBB50 ;color: #3b3a5e;">Contact</div>
+                        </div>
+                        <h5 class="fw-bold mt-3" style="color:#3b3a5e">Comefortable Appartment</h5>
+                        <p style="color:#8E8E8E ;"><i class="fa-solid fa-location-dot" style="color: #FFBB50;"></i> 709 West Drive Chicago, IL 60606</p>
+                        <div class="row">
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bed border-end pe-1"></i> 3 Beds</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bath"></i> 2 Baths</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-car"></i> 1 Parking</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-ruler"></i> 120 Sqft</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class=" bg-white mb-3 p-4">
+                        <img src="./img/house.jpg" style="height: 200px;" class="img-fluid w-100" alt="">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h3 class="fw-bold" style="color:#FFBB50 ;">$3500/Mo</h3>
+                            <div class="btn hover p-2 px-3 fw-bold" style="background-color:#FFBB50 ;color: #3b3a5e;">Contact</div>
+                        </div>
+                        <h5 class="fw-bold mt-3" style="color:#3b3a5e">Comefortable Appartment</h5>
+                        <p style="color:#8E8E8E ;"><i class="fa-solid fa-location-dot" style="color: #FFBB50;"></i> 709 West Drive Chicago, IL 60606</p>
+                        <div class="row">
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bed border-end pe-1"></i> 3 Beds</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bath"></i> 2 Baths</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-car"></i> 1 Parking</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-ruler"></i> 120 Sqft</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class=" bg-white mb-3 p-4">
+                        <img src="./img/house.jpg" style="height: 200px;" class="img-fluid w-100" alt="">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h3 class="fw-bold" style="color:#FFBB50 ;">$3500/Mo</h3>
+                            <div class="btn hover p-2 px-3 fw-bold" style="background-color:#FFBB50 ;color: #3b3a5e;">Contact</div>
+                        </div>
+                        <h5 class="fw-bold mt-3" style="color:#3b3a5e">Comefortable Appartment</h5>
+                        <p style="color:#8E8E8E ;"><i class="fa-solid fa-location-dot" style="color: #FFBB50;"></i> 709 West Drive Chicago, IL 60606</p>
+                        <div class="row">
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bed border-end pe-1"></i> 3 Beds</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bath"></i> 2 Baths</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-car"></i> 1 Parking</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-ruler"></i> 120 Sqft</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class=" bg-white mb-3 p-4">
+                        <img src="./img/house.jpg" style="height: 200px;" class="img-fluid w-100" alt="">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h3 class="fw-bold" style="color:#FFBB50 ;">$3500/Mo</h3>
+                            <div class="btn hover p-2 px-3 fw-bold" style="background-color:#FFBB50 ;color: #3b3a5e;">Contact</div>
+                        </div>
+                        <h5 class="fw-bold mt-3" style="color:#3b3a5e">Comefortable Appartment</h5>
+                        <p style="color:#8E8E8E ;"><i class="fa-solid fa-location-dot" style="color: #FFBB50;"></i> 709 West Drive Chicago, IL 60606</p>
+                        <div class="row">
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bed border-end pe-1"></i> 3 Beds</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bath"></i> 2 Baths</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-car"></i> 1 Parking</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-ruler"></i> 120 Sqft</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class=" bg-white mb-3 p-4">
+                        <img src="./img/house.jpg" style="height: 200px;" class="img-fluid w-100" alt="">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <h3 class="fw-bold" style="color:#FFBB50 ;">$3500/Mo</h3>
+                            <div class="btn hover p-2 px-3 fw-bold" style="background-color:#FFBB50 ;color: #3b3a5e;">Contact</div>
+                        </div>
+                        <h5 class="fw-bold mt-3" style="color:#3b3a5e">Comefortable Appartment</h5>
+                        <p style="color:#8E8E8E ;"><i class="fa-solid fa-location-dot" style="color: #FFBB50;"></i> 709 West Drive Chicago, IL 60606</p>
+                        <div class="row">
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bed border-end pe-1"></i> 3 Beds</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-bath"></i> 2 Baths</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-car"></i> 1 Parking</div></div>
+                            <div class="col-3"><div class="border p-2" style="color: #3b3a5e;font-size:10px ;"><i class="fa-solid fa-ruler"></i> 120 Sqft</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3 mb-3"><div class="btn bg-white hover px-3 mb-3 py-3" style="color: #3b3a5e;">See More <span><i class="fa-solid fa-arrow-right text-light"  style="background-color: #FFBB50;border-radius: 50%;width: 10px;height:10px"></i></span></div></div>
+        </div>
+    </section>
+    <section>
+      <div class="container mb-5 pt-5">
+        <div class="pt-5 mb-4 text-center">
+          <span class="new-lanches-span p-2"><span style="color:#FFBB50;">03</span> Why Choose</span>
+          <h3 class="fw-bold py-3" style="color:#3b3a5e">Why Choose Our Properties <br> Don’t Miss US!</h3>
+        </div>
+        <div class="row mb-4">
+          <div class="mb-2 col-lg-4">
+            <div class="p-4 m-1 h-100" style="background-color: #F3D1C0;border-radius: 5px;">
+              <i class="fa-solid fa-hand-holding-dollar mb-3" style="font-size:150px ;color: #B16642;"></i>
+              <h5 class="fw-bold" style="color:#3b3a5e">Low Cost  advertise system</h5>
+              <p style="color:#B16642;">Distinctively re-engineer revolutionary meta-services and premium  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+          <div class="mb-2 col-lg-8">
+            <div class="p-4 h-100 align-items-center m-1 row" style="background-color: #F3D1C0;border-radius: 5px;">
+              <div class="col-lg-6">
+                <img src="./img/Image.png" class="img-fluid w-100 mb-4" alt="">
+              </div>
+              <div class="col-lg-6 p-4" style="background-image:url(./img/Vector.png) ;">
+                <h5 class="fw-bold" style="color:#3b3a5e">New Lances middle East</h5>
+                <p class="mb-3" style="color:#B16642;">Distinctively re-engineer revolutionary meta-services and premium  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                <p style="color:#B16642;">Distinctively re-engineer revolutionary meta-services and premium.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="mb-2 col-lg-4">
+            <div class="p-4 m-1 h-100" style="background-color: #F3D1C0;border-radius: 5px;background-image:url(./img/Vector.png) ;">
+              <img src="./img/Mask group.png" class="img-fluid " style="width: 200px;height:150px" alt="">
+              <h5 class="fw-bold" style="color:#3b3a5e">Friendly interface user</h5>
+              <p style="color:#B16642;">Distinctively re-engineer revolutionary meta-services and premium  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+          <div class="mb-2 col-lg-4">
+            <div class="p-4 m-1 h-100" style="background-color: #F3D1C0;border-radius: 5px;">
+              <img src="./img/Group 9.png" class="img-fluid " style="width: 100%;height:150px" alt="">
+              <h5 class="fw-bold" style="color:#3b3a5e">Prime Real Estate</h5>
+              <p style="color:#B16642;">Distinctively re-engineer revolutionary meta-services and premium  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+          <div class="mb-2 col-lg-4">
+            <div class="p-4 m-1 h-100" style="background-color: #F3D1C0;border-radius: 5px;">
+              <img src="./img/Group 10.png" class="img-fluid " style="width: 100%;height:150px" alt="">
+              <h5 class="fw-bold" style="color:#3b3a5e">Advanced free services</h5>
+              <p style="color:#B16642;">Distinctively re-engineer revolutionary meta-services and premium  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+        <div class="row container-fluid">
+          <div class="col-md-8 p-lg-5">
+            <div class=" p-5 text-start">
+              <span class="new-lanches-span p-2"><span style="color:#FFBB50;">04</span> About us</span>
+              <h3 class="fw-bold py-3" style="color:#3b3a5e">Don’t Miss Us <br> you find the right Propertys</h3>
+              <p class="mb-3" style="color:#B16642;">Distinctively re-engineer revolutionary meta-services and premium  At vero eos et accusamus et iusto</p>
+              <p class="mb-4" style="color:#B16642;">Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="text-start mt-3 mb-3"><div class="btn px-3 mb-3 py-3 hover" style="color: #3b3a5e;background-color: #FFBB50;">Contact <span><i class="fa-solid fa-arrow-right"  style="color: #FFBB50;background-color: #3b3a5e;border-radius: 50%;width: 10px;height:10px"></i></span></div></div>
+          </div>
+          </div>
+        </div>
+    </section>
+    <section class="pt-5">
+      <div class="container">
+        <div class="pt-5 text-center">
+          <span class="new-lanches-span p-2"><span style="color:#FFBB50;">05</span> Services</span>
+          <h3 class="fw-bold py-3" style="color:#3b3a5e">See How Can Help</h3>
+        </div>
+        <div class="row pt-4">
+          <div class="col-lg-4 text-center col-sm-6">
+              <img src="./img/home.png" class="img-fluid" alt="">
+              <div style="transform:translateY(-95px) ;">
+                <h4 class="fw-bold" style="color:#3b3a5e ;">Buy Property</h4>
+                <p style="color:#8D8D8D">High level overviews. approaches lverall value proposition. Organically grow the holistic world view of disruptive.</p>
+              </div>
+          </div>
+          <div class="col-lg-4 text-center col-sm-6">
+              <img src="./img/Icon (1).png" class="img-fluid" alt="">
+              <div style="transform:translateY(-95px) ;">
+                <h4 class="fw-bold" style="color:#3b3a5e ;">Sell Property</h4>
+                <p style="color:#8D8D8D">Frameworks to provide a robust synopsis for high level overviews. approaches lverall, Organically grow the holistic.</p>
+              </div>
+          </div>
+          <div class="col-lg-4 text-center col-sm-6">
+              <img src="./img/Icon (2).png" class="img-fluid" alt="">
+              <div style="transform:translateY(-95px) ;">
+                <h4 class="fw-bold" style="color:#3b3a5e ;">Rent Property</h4>
+                <p style="color:#8D8D8D">Leverage agile frameworks to provide a robust synopsis for high level overviews. approaches lverall value proposition.</p>
+              </div>
+          </div>
+          <div class="col-lg-4 text-center col-sm-6">
+              <img src="./img/Icon (3).png" class="img-fluid" alt="">
+              <div style="transform:translateY(-95px) ;">
+                <h4 class="fw-bold" style="color:#3b3a5e ;">Rent Your Property</h4>
+                <p style="color:#8D8D8D">Leverage agile frameworks to provide a robust synopsis for high level overviews. lverall value proposition Organically grow holistic .</p>
+              </div>
+          </div>
+          <div class="col-lg-4 text-center col-sm-6">
+              <img src="./img/Icon (3).png" class="img-fluid" alt="">
+              <div style="transform:translateY(-95px) ;">
+                <h4 class="fw-bold" style="color:#3b3a5e ;">Become A Member</h4>
+                <p style="color:#8D8D8D">Leverage agile frameworks to provide a robust synopsis for high level overviews. lverall value proposition Organically grow holistic .</p>
+              </div>
+          </div>
+          <div class="col-lg-4 text-center col-sm-6">
+              <img src="./img/Icon (4).png" class="img-fluid" alt="">
+              <div style="transform:translateY(-95px) ;">
+                <h4 class="fw-bold" style="color:#3b3a5e ;">Post Your Advertise</h4>
+                <p style="color:#8D8D8D">Leverage agile frameworks to provide a robust synopsis for high level overviews. approaches lverall value proposition.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-5 pb-5" style="background-color:#F3E8E2;">
+      <div class="container">
+        <div class="d-flex mb-3 justify-content-between align-items-center">
+          <h4 class="fw-bold" style="color:#3b3a5e;">What our customers <br> say about us</h4>
+          <div class="d-flex gap-3">
+            <div onclick="moveSlide(-1)" class="bg-white text-center hover" style="border-radius: 50%;color:#FFBB50;width: 40px;height: 40px;cursor:pointer;"><i class="fa-solid fa-arrow-left mt-2" style="font-size:23px ;"></i></div>
+            <div onclick="moveSlide(1)" class="text-white text-center hover" style="border-radius: 50%;background-color:#FFBB50;width: 40px;height: 40px;cursor:pointer;"><i class="fa-solid fa-arrow-right mt-2" style="font-size:23px ;"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid d-flex gap-4 overflow-hidden" id="carousel-container">
+        <div id="customer-carousel" class="d-flex gap-3 transition">
+          <!-- Customer divs here -->
+          <div class="d-flex flex-column customers-container customer-slide">
+            <div>
+             <div class="p-4 mb-3 customers">
+               <p>Distinctively re-engineer revolutionary services and <span class="fw-bold">premium  At vero accusamus</span> et iustoDignissimos ducimus qui blanditiis praesentium voluptatum  <i class="fa-solid fa-sun"></i> deleniti atque corrupti quos dolores .</p>
+             </div>
+             <div class="d-flex gap-2 align-items-center">
+               <img src="./img/boy.jpg" class="img-fluid" style="width:60px ;height: 60px;border-radius:50%" alt="">
+               <div>
+                 <h6 class="fw-bold" style="color:#3b3a5e">Victor Murphy</h6>
+                 <p class="m-0" style="color:#B16642 ;">Happy Customers</p>
+               </div>
+             </div>
+            </div>
+         </div>
+         <div class="d-flex flex-column customers-container customer-slide">
+            <div>
+             <div class="p-4 mb-3 customers">
+               <p>Completely synergize resource taxing <span class="fw-bold">relationships</span> via premier. <i class="fa-solid fa-link"></i> Professionally cultivate one-to-one customer service with robust ideas.</p>
+               <p>Dynamically <span class="fw-bold" style="color:#3b3a5e ;">innovate resource-leveling customer</span> service for state of the art customer service.</p>
+             </div>
+             <div class="d-flex gap-2 align-items-center">
+               <img src="./img/boy.jpg" class="img-fluid" style="width:60px ;height: 60px;border-radius:50%" alt="">
+               <div>
+                 <h6 class="fw-bold" style="color:#3b3a5e">Victor Murphy</h6>
+                 <p class="m-0" style="color:#B16642 ;">Happy Customers</p>
+               </div>
+             </div>
+            </div>
+         </div>
+         <div class="d-flex flex-column customers-container customer-slide">
+           <div>
+            <div class="p-4 mb-3 customers">
+              <p>Distinctively re-engineer revolutionary services and <span class="fw-bold">premium</span> At vero accusamus et iustoDignissimos .</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <img src="./img/boy.jpg" class="img-fluid" style="width:60px ;height: 60px;border-radius:50%" alt="">
+              <div>
+                <h6 class="fw-bold" style="color:#3b3a5e">Victor Murphy</h6>
+                <p class="m-0" style="color:#B16642 ;">Happy Customers</p>
+              </div>
+            </div>
+           </div>
+        </div>
+          <div class="d-flex flex-column customers-container customer-slide">
+            <div>
+             <div class="p-4 mb-3 customers">
+               <p>Distinctively re-engineer revolutionary services and <span class="fw-bold">premium  At vero accusamus</span> et iustoDignissimos ducimus qui blanditiis praesentium voluptatum  <i class="fa-solid fa-sun"></i> deleniti atque corrupti quos dolores .</p>
+             </div>
+             <div class="d-flex gap-2 align-items-center">
+               <img src="./img/boy.jpg" class="img-fluid" style="width:60px ;height: 60px;border-radius:50%" alt="">
+               <div>
+                 <h6 class="fw-bold" style="color:#3b3a5e">Victor Murphy</h6>
+                 <p class="m-0" style="color:#B16642 ;">Happy Customers</p>
+               </div>
+             </div>
+            </div>
+         </div>
+         <div class="d-flex flex-column customers-container customer-slide">
+            <div>
+             <div class="p-4 mb-3 customers">
+               <p>Completely synergize resource taxing <span class="fw-bold">relationships</span> via premier. <i class="fa-solid fa-link"></i> Professionally cultivate one-to-one customer service with robust ideas.</p>
+               <p>Dynamically <span class="fw-bold" style="color:#3b3a5e ;">innovate resource-leveling customer</span> service for state of the art customer service.</p>
+             </div>
+             <div class="d-flex gap-2 align-items-center">
+               <img src="./img/boy.jpg" class="img-fluid" style="width:60px ;height: 60px;border-radius:50%" alt="">
+               <div>
+                 <h6 class="fw-bold" style="color:#3b3a5e">Victor Murphy</h6>
+                 <p class="m-0" style="color:#B16642 ;">Happy Customers</p>
+               </div>
+             </div>
+            </div>
+         </div>
+         <div class="d-flex flex-column customers-container customer-slide">
+           <div>
+            <div class="p-4 mb-3 customers">
+              <p>Distinctively re-engineer revolutionary services and <span class="fw-bold">premium</span> At vero accusamus et iustoDignissimos .</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <img src="./img/boy.jpg" class="img-fluid" style="width:60px ;height: 60px;border-radius:50%" alt="">
+              <div>
+                <h6 class="fw-bold" style="color:#3b3a5e">Victor Murphy</h6>
+                <p class="m-0" style="color:#B16642 ;">Happy Customers</p>
+              </div>
+            </div>
+           </div>
+        </div>
+          <!-- Repeat similar blocks for each customer review -->
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="container">
+          <div class="d-flex pb-4 border-bottom mb-5 justify-content-between flex-wrap">
+            <div class="text-center">
+              <h3 class="fw-bold m-0" style="color:#3b3a5e;">56,180</h3>
+              <p class="fw-bold" style="color:#3b3a5e;">Properties for sale</p>
+            </div>
+            <div class="text-center">
+              <h3 class="fw-bold m-0" style="color:#3b3a5e;">99%</h3>
+              <p class="fw-bold" style="color:#3b3a5e;">Properties for rent</p>
+            </div>
+            <div class="text-center">
+              <h3 class="fw-bold m-0" style="color:#3b3a5e;">25K+</h3>
+              <p class="fw-bold" style="color:#3b3a5e;">New launches</p>
+            </div>
+            <div class="text-center">
+              <h3 class="fw-bold m-0" style="color:#3b3a5e;">2,918</h3>
+              <p class="fw-bold" style="color:#3b3a5e;">Customer Satisfaction</p>
+            </div>
+          </div>
+          <div class="text-center pt-5">
+            <span class="new-lanches-span p-2"><span style="color:#FFBB50;">06</span> Neighborhoods</span>
+            <h3 class="fw-bold py-3" style="color:#3b3a5e">Discover The Neighborhoods</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 text-center mb-3">
+              <div class="image-container position-relative">
+                <img src="/img/new-york.png" class="img-fluid w-100" alt="Image 1">
+                <span class="countries-arrow hover"><i class="fa-solid fa-arrow-right"></i></span>
+                <div class="text-container">
+                  <h5 class="text-white">New York</h5>
+                  <h6 style="color: #FFBB50;">250 Property</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center mb-3">
+              <div class="image-container position-relative">
+                <img src="/img/atalanta.png" class="img-fluid w-100" alt="Image 1">
+                <span class="countries-arrow hover"><i class="fa-solid fa-arrow-right"></i></span>
+                <div class="text-container">
+                  <h5 class="text-white">Atlanta</h5>
+                  <h6 style="color: #FFBB50;">120 Property</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center mb-3">
+              <div class="image-container position-relative">
+                <img src="/img/singapore.png" class="img-fluid w-100" alt="Image 1">
+                <span class="countries-arrow hover"><i class="fa-solid fa-arrow-right"></i></span>
+                <div class="text-container">
+                  <h5 class="text-white">Singapore</h5>
+                  <h6 style="color: #FFBB50;">53 Property</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center mb-3">
+              <div class="image-container position-relative">
+                <img src="/img/paris.png" class="img-fluid w-100" alt="Image 1">
+                <span class="countries-arrow hover"><i class="fa-solid fa-arrow-right"></i></span>
+                <div class="text-container">
+                  <h5 class="text-white">Paris</h5>
+                  <h6 style="color: #FFBB50;">99 Property</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="mt-5">
+      <div class="container p-5" style="background-color:#F3E8E2;">
+        <h4 class="fw-bold text-center" style="color:#3b3a5e;">More than 50+ Brands Trusted World Wide</h4>
+        <div class=" row justify-content-center mt-5">
+          <h3 class="fw-bold col-lg-2 col-md-4 mb-5 col-6" style="color: #CAB7AD;">Proland</h3>
+          <h3 class="fw-bold col-lg-2 col-md-4 mb-5 col-6" style="color: #CAB7AD;"><img src="./img/logo1.svg" class="img-fluid mb-1" style="height: 35px;" alt=""></h3>
+          <h3 class="fw-bold col-lg-2 col-md-4 mb-5 col-6" style="color: #CAB7AD;"><img src="./img/logo2.png" class="img-fluid mb-1" style="height: 35px;" alt=""></h3>
+          <h3 class="fw-bold col-lg-2 col-md-4 mb-5 col-6" style="color: #CAB7AD;"><img src="./img/logo3.png" class="img-fluid mb-1" style="height: 35px;" alt=""></h3>
+          <h3 class="fw-bold col-lg-2 col-md-4 mb-5 col-6 mx-lg-2" style="color: #CAB7AD;"><img src="./img/logo4.png" class="img-fluid mb-1" style="height: 35px;" alt=""></h3>
+          <h3 class="fw-bold col-lg-2 col-md-4 mb-5 col-6" style="color: #CAB7AD;"><img src="./img/logo5.svg" class="img-fluid mb-1" style="height: 35px;" alt=""></h3>
+          <h3 class="fw-bold col-lg-2 col-md-4 mb-5 col-6" style="color: #CAB7AD;"><img src="./img/logo6.svg" class="img-fluid mb-1" style="height: 35px;" alt=""></h3>
+          <h3 class="fw-bold col-lg-2 col-md-4 mb-5 col-6" style="color: #CAB7AD;"><img src="./img/logo7.png" class="img-fluid mb-1" style="height: 35px;" alt=""></h3>
+          <h3 class="fw-bold col-lg-2 col-md-4 mb-5 col-6" style="color: #CAB7AD;"><img src="./img/logo8.png" class="img-fluid mb-1" style="height: 35px;" alt=""></h3>
+        </div>
+        <div class="text-center">
+          <div class="btn hover bg-white px-3 py-3" style="color: #3b3a5e;">Explore now <span><i class="fa-solid fa-arrow-right text-light"  style="background-color: #FFBB50;border-radius: 50%;width: 10px;height:10px"></i></span></div>
+        </div>
+      </div>
+    </section>
+    <section class="blog mt-5 pt-5 pb-5">
+        <div class="container pb-5">
+          <div class="text-center pt-5">
+            <span class="new-lanches-span p-2"><span style="color:#FFBB50;">07</span> Blog</span>
+            <h3 class="fw-bold py-3" style="color:#3b3a5e">Discover Latest Trends In Interior /Furniture Design </h3>
+          </div>
+          <div class="mt-4 text-center">
+            <img src="./img/article1.png" class="img-fluid w-50" alt="">
+            <div class="mt-4">
+              <p style="color:#B16642 ;">November 05, 2021 &nbsp;  &nbsp;    |   &nbsp; &nbsp;   Architecture</p>
+            </div>
+            <h4 class="fw-bold text-center m-auto" style="color:#3b3a5e;">Here’s how to decorate your new home <br> from scratch</h4>
+          </div>
+          <div class="mt-5 text-center">
+            <img src="./img/article2.png" class="img-fluid w-50" alt="">
+            <div class="mt-4">
+              <p style="color:#B16642 ;">December 14, 2021 &nbsp;  &nbsp;    |   &nbsp; &nbsp;   Marcket Manager</p>
+            </div>
+            <h4 class="fw-bold text-center m-auto" style="color:#3b3a5e;">Home buying basics: How many Kitchans <br> and bedrooms?</h4>
+          </div>
+          <div class="text-center mt-5">
+            <div class="btn hover bg-white px-3 py-3" style="color: #3b3a5e;">See All Articles <span><i class="fa-solid fa-arrow-right text-light"  style="background-color: #FFBB50;border-radius: 50%;width: 10px;height:10px"></i></span></div>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <div class="container pt-5 pb-3">
+        <div class="row border-bottom border-top">
+          <div class="col-lg-4 col-md-4 py-md-5 border-end">
+            <h3 class=" fw-bold" style="color: #3b3a5e"
+            ><img src="./img/Icon.svg" class="mb-3" style="width:60px ;height:40px" alt=""> Proper Land</h3>
+            <div class="links d-flex gap-3" style="color: #3b3a5e">
+              <i class="fa-brands fa-instagram" style="font-size: 20px;"></i>
+              <i class="fa-brands fa-facebook" style="font-size: 20px;"></i>
+              <i class="fa-brands fa-twitter" style="font-size: 20px;"></i>
+              <i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+              <i class="fa-brands fa-youtube" style="font-size: 20px;"></i>
+            </div>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-lg-5 col-md-6 pt-3 pb-5">
+            <h3 class="fw-bold pt-3" style="color:#3b3a5e">Get Our Latest Offers </h3>
+            <p class="m-0" style="color: #B16642;">Leverage agile frameworks to provide a robust synopsis for high level overviews. approaches lverall value proposition. Organically grow the holistic world view of disruptive.</p>
+            <div class="d-flex mt-3 gap-3">
+              <input type="text" placeholder="your email address here" class="form-control">
+              <div
+              class="btn hover w-50 py-2 fw-bold text-white"
+              style="background-color: #3b3a5e">
+              Subscribe now
+            </div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row border-bottom">
+          <div class="col-lg-8 col-sm-6 pb-5 border-end">
+            <div class="row pt-4 text-center">
+              <div class="col-lg-3 col-sm-5 mb-3">
+                <h5 class="fw-bold mb-3" style="color:#3b3a5e ;">Company</h5>
+                <p class="m-1">About</p>
+                <p class="m-1">Blog</p>
+                <p class="m-1">Properties</p>
+                <p class="m-1">Agents</p>
+                <p class="m-1">Services</p>
+                <p class="m-1">Contact us</p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-lg-3 col-sm-5 mb-3">
+                <h5 class="fw-bold mb-3" style="color:#3b3a5e ;">Services</h5>
+                <p class="m-1">Rend A Home</p>
+                <p class="m-1">Sell A Home</p>
+                <p class="m-1">Buy A Home</p>
+                <p class="m-1">Property Insurance</p>
+                <p class="m-1">Member Support</p>
+                <p class="m-1">Experience Agent</p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-lg-3 col-sm-5 mb-3">
+                <h5 class="fw-bold mb-3" style="color:#3b3a5e ;">Uitility pages</h5>
+                <p class="m-1">Style Guide</p>
+                <p class="m-1">Licenses</p>
+                <p class="m-1">Changelog</p>
+                <p class="m-1">Password</p>
+                <p class="m-1">Not found</p>
+                <p class="m-1">More Template</p>
+              </div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 p-4">
+              <div class="p-4" style="background-color: #FFBB50;color: #3b3a5e;border-radius: 5px;">
+                <h5 class="fw-bold mb-3">Contact Us</h5>
+                <p class="m-2"><i class="fa-solid fa-location-dot"></i> 329 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
+                <p class="m-2"><i class="fa-solid fa-phone"></i> 123 456 7890</p>
+                <p class="m-2"><i class="fa-solid fa-envelope"></i> support@example.com</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+    <!--scirpt Files-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/all.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!--scirpt Files-->
+  </body>
+</html>
